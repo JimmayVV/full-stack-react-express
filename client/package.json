@@ -11,7 +11,7 @@
     "validate": "npm run lint && npm run prettier -- --list-different",
     "start": "webpack-dev-server --config ./webpack.config.js --mode development --hot",
     "build": "webpack --mode production",
-    "precommit": "npm run validate"
+    "precommit": "lint-staged"
   },
   "keywords": [
     "React",
@@ -47,6 +47,7 @@
     "husky": "^1.1.2",
     "jest": "^23.6.0",
     "jsdom": "^12.2.0",
+    "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
     "react-hot-loader": "^4.3.11",
     "style-loader": "^0.23.1",
